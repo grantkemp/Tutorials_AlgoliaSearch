@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A14A14391BCE69A900D6DB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A14381BCE69A900D6DB06 /* AppDelegate.swift */; };
+		A14A143B1BCE69A900D6DB06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A143A1BCE69A900D6DB06 /* ViewController.swift */; };
+		A14A143E1BCE69A900D6DB06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14A143C1BCE69A900D6DB06 /* Main.storyboard */; };
+		A14A14411BCE69A900D6DB06 /* Algolia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14A143F1BCE69A900D6DB06 /* Algolia.xcdatamodeld */; };
+		A14A14431BCE69A900D6DB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14A14421BCE69A900D6DB06 /* Assets.xcassets */; };
+		A14A14461BCE69A900D6DB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14A14441BCE69A900D6DB06 /* LaunchScreen.storyboard */; };
+		A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */; settings = {ASSET_TAGS = (); }; };
+		A14A14501BCE7AD300D6DB06 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A14A144F1BCE7AD300D6DB06 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		E9994A0339427D347C7129B2 /* Pods_Algolia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895B3DD86F81C8AD48F64B87 /* Pods_Algolia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A4AA85A79CE81F556D103BC /* Pods-Algolia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia/Pods-Algolia.debug.xcconfig"; sourceTree = "<group>"; };
+		895B3DD86F81C8AD48F64B87 /* Pods_Algolia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algolia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14A14351BCE69A900D6DB06 /* Algolia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algolia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14A14381BCE69A900D6DB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A14A143A1BCE69A900D6DB06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A14A143D1BCE69A900D6DB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A14A14401BCE69A900D6DB06 /* Algolia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Algolia.xcdatamodel; sourceTree = "<group>"; };
+		A14A14421BCE69A900D6DB06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A14A14451BCE69A900D6DB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A14A14471BCE69A900D6DB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Highlighting.swift"; sourceTree = "<group>"; };
+		A14A144F1BCE7AD300D6DB06 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C272300D8532F9F05CCE0B5B /* Pods-Algolia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia/Pods-Algolia.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14A14321BCE69A900D6DB06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9994A0339427D347C7129B2 /* Pods_Algolia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34DF057D4A7F58CE65C5CBF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A4AA85A79CE81F556D103BC /* Pods-Algolia.debug.xcconfig */,
+				C272300D8532F9F05CCE0B5B /* Pods-Algolia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E8BE762FBB821371094D85C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				895B3DD86F81C8AD48F64B87 /* Pods_Algolia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A14A142C1BCE69A900D6DB06 = {
+			isa = PBXGroup;
+			children = (
+				A14A144F1BCE7AD300D6DB06 /* README.md */,
+				A14A14371BCE69A900D6DB06 /* Algolia */,
+				A14A14361BCE69A900D6DB06 /* Products */,
+				34DF057D4A7F58CE65C5CBF5 /* Pods */,
+				9E8BE762FBB821371094D85C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A14A14361BCE69A900D6DB06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A14A14351BCE69A900D6DB06 /* Algolia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A14A14371BCE69A900D6DB06 /* Algolia */ = {
+			isa = PBXGroup;
+			children = (
+				A14A14381BCE69A900D6DB06 /* AppDelegate.swift */,
+				A14A143A1BCE69A900D6DB06 /* ViewController.swift */,
+				A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */,
+				A14A143C1BCE69A900D6DB06 /* Main.storyboard */,
+				A14A14421BCE69A900D6DB06 /* Assets.xcassets */,
+				A14A14441BCE69A900D6DB06 /* LaunchScreen.storyboard */,
+				A14A14471BCE69A900D6DB06 /* Info.plist */,
+				A14A143F1BCE69A900D6DB06 /* Algolia.xcdatamodeld */,
+			);
+			path = Algolia;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14A14341BCE69A900D6DB06 /* Algolia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14A144A1BCE69A900D6DB06 /* Build configuration list for PBXNativeTarget "Algolia" */;
+			buildPhases = (
+				B9B1319F93D6DB3EA3D4CD60 /* Check Pods Manifest.lock */,
+				A14A14311BCE69A900D6DB06 /* Sources */,
+				A14A14321BCE69A900D6DB06 /* Frameworks */,
+				A14A14331BCE69A900D6DB06 /* Resources */,
+				9F902F5A7F2BDBDA1D9B1E3D /* Embed Pods Frameworks */,
+				1E5DC52CC4951A8D3EDE466F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Algolia;
+			productName = Algolia;
+			productReference = A14A14351BCE69A900D6DB06 /* Algolia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14A142D1BCE69A900D6DB06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Grant Kemp";
+				TargetAttributes = {
+					A14A14341BCE69A900D6DB06 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A14A14301BCE69A900D6DB06 /* Build configuration list for PBXProject "Algolia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A14A142C1BCE69A900D6DB06;
+			productRefGroup = A14A14361BCE69A900D6DB06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14A14341BCE69A900D6DB06 /* Algolia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14A14331BCE69A900D6DB06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14A14461BCE69A900D6DB06 /* LaunchScreen.storyboard in Resources */,
+				A14A14431BCE69A900D6DB06 /* Assets.xcassets in Resources */,
+				A14A143E1BCE69A900D6DB06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E5DC52CC4951A8D3EDE466F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algolia/Pods-Algolia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F902F5A7F2BDBDA1D9B1E3D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algolia/Pods-Algolia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B1319F93D6DB3EA3D4CD60 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14A14311BCE69A900D6DB06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */,
+				A14A14411BCE69A900D6DB06 /* Algolia.xcdatamodeld in Sources */,
+				A14A14501BCE7AD300D6DB06 /* README.md in Sources */,
+				A14A143B1BCE69A900D6DB06 /* ViewController.swift in Sources */,
+				A14A14391BCE69A900D6DB06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A14A143C1BCE69A900D6DB06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14A143D1BCE69A900D6DB06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A14A14441BCE69A900D6DB06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14A14451BCE69A900D6DB06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A14A14481BCE69A900D6DB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A14A14491BCE69A900D6DB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A14A144B1BCE69A900D6DB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4AA85A79CE81F556D103BC /* Pods-Algolia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Algolia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grant.Algolia.Algolia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A14A144C1BCE69A900D6DB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C272300D8532F9F05CCE0B5B /* Pods-Algolia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Algolia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grant.Algolia.Algolia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A14A14301BCE69A900D6DB06 /* Build configuration list for PBXProject "Algolia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14A14481BCE69A900D6DB06 /* Debug */,
+				A14A14491BCE69A900D6DB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14A144A1BCE69A900D6DB06 /* Build configuration list for PBXNativeTarget "Algolia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14A144B1BCE69A900D6DB06 /* Debug */,
+				A14A144C1BCE69A900D6DB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A14A143F1BCE69A900D6DB06 /* Algolia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A14A14401BCE69A900D6DB06 /* Algolia.xcdatamodel */,
+			);
+			currentVersion = A14A14401BCE69A900D6DB06 /* Algolia.xcdatamodel */;
+			path = Algolia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A14A142D1BCE69A900D6DB06 /* Project object */;
+}
