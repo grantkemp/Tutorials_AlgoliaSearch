@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BB3931F05B0F13AFE3DA3CF /* Pods_Algolia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895B3DD86F81C8AD48F64B87 /* Pods_Algolia.framework */; };
 		A14A14391BCE69A900D6DB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A14381BCE69A900D6DB06 /* AppDelegate.swift */; };
 		A14A143B1BCE69A900D6DB06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A143A1BCE69A900D6DB06 /* ViewController.swift */; };
 		A14A143E1BCE69A900D6DB06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14A143C1BCE69A900D6DB06 /* Main.storyboard */; };
 		A14A14411BCE69A900D6DB06 /* Algolia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14A143F1BCE69A900D6DB06 /* Algolia.xcdatamodeld */; };
 		A14A14431BCE69A900D6DB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14A14421BCE69A900D6DB06 /* Assets.xcassets */; };
 		A14A14461BCE69A900D6DB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14A14441BCE69A900D6DB06 /* LaunchScreen.storyboard */; };
-		A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */; settings = {ASSET_TAGS = (); }; };
-		A14A14501BCE7AD300D6DB06 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A14A144F1BCE7AD300D6DB06 /* README.md */; settings = {ASSET_TAGS = (); }; };
-		E9994A0339427D347C7129B2 /* Pods_Algolia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895B3DD86F81C8AD48F64B87 /* Pods_Algolia.framework */; };
+		A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */; };
+		A14A14501BCE7AD300D6DB06 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A14A144F1BCE7AD300D6DB06 /* README.md */; };
+		A14A14521BCE7CFF00D6DB06 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A4AA85A79CE81F556D103BC /* Pods-Algolia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia/Pods-Algolia.debug.xcconfig"; sourceTree = "<group>"; };
+		6C7D6F84BB7C23CD3AE0D8D4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895B3DD86F81C8AD48F64B87 /* Pods_Algolia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algolia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14A14351BCE69A900D6DB06 /* Algolia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algolia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14A14381BCE69A900D6DB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 		A14A14471BCE69A900D6DB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Highlighting.swift"; sourceTree = "<group>"; };
 		A14A144F1BCE7AD300D6DB06 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		C272300D8532F9F05CCE0B5B /* Pods-Algolia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia/Pods-Algolia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9994A0339427D347C7129B2 /* Pods_Algolia.framework in Frameworks */,
+				6BB3931F05B0F13AFE3DA3CF /* Pods_Algolia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				895B3DD86F81C8AD48F64B87 /* Pods_Algolia.framework */,
+				6C7D6F84BB7C23CD3AE0D8D4 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +95,7 @@
 				A14A143C1BCE69A900D6DB06 /* Main.storyboard */,
 				A14A14421BCE69A900D6DB06 /* Assets.xcassets */,
 				A14A14441BCE69A900D6DB06 /* LaunchScreen.storyboard */,
+				A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */,
 				A14A14471BCE69A900D6DB06 /* Info.plist */,
 				A14A143F1BCE69A900D6DB06 /* Algolia.xcdatamodeld */,
 			);
@@ -219,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */,
+				A14A14521BCE7CFF00D6DB06 /* SearchTableViewController.swift in Sources */,
 				A14A14411BCE69A900D6DB06 /* Algolia.xcdatamodeld in Sources */,
 				A14A14501BCE7AD300D6DB06 /* README.md in Sources */,
 				A14A143B1BCE69A900D6DB06 /* ViewController.swift in Sources */,
