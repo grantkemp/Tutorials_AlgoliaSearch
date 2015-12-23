@@ -17,6 +17,8 @@
 		A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */; };
 		A14A14501BCE7AD300D6DB06 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A14A144F1BCE7AD300D6DB06 /* README.md */; };
 		A14A14521BCE7CFF00D6DB06 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */; };
+		A165A5851C2AC8EF00839E9E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165A5841C2AC8EF00839E9E /* MovieModel.swift */; };
+		A165A58A1C2ACA2000839E9E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165A5891C2ACA2000839E9E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Highlighting.swift"; sourceTree = "<group>"; };
 		A14A144F1BCE7AD300D6DB06 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		A165A5841C2AC8EF00839E9E /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		A165A5891C2ACA2000839E9E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C272300D8532F9F05CCE0B5B /* Pods-Algolia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia/Pods-Algolia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,17 +93,43 @@
 		A14A14371BCE69A900D6DB06 /* Algolia */ = {
 			isa = PBXGroup;
 			children = (
+				A165A5881C2ACA1400839E9E /* Support Files */,
+				A165A5871C2AC90800839E9E /* Models */,
+				A165A5861C2AC8FA00839E9E /* Views */,
 				A14A14381BCE69A900D6DB06 /* AppDelegate.swift */,
 				A14A143A1BCE69A900D6DB06 /* ViewController.swift */,
 				A14A144D1BCE792E00D6DB06 /* UILabel+Highlighting.swift */,
 				A14A143C1BCE69A900D6DB06 /* Main.storyboard */,
 				A14A14421BCE69A900D6DB06 /* Assets.xcassets */,
 				A14A14441BCE69A900D6DB06 /* LaunchScreen.storyboard */,
-				A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */,
 				A14A14471BCE69A900D6DB06 /* Info.plist */,
 				A14A143F1BCE69A900D6DB06 /* Algolia.xcdatamodeld */,
 			);
 			path = Algolia;
+			sourceTree = "<group>";
+		};
+		A165A5861C2AC8FA00839E9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A165A5871C2AC90800839E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A165A5841C2AC8EF00839E9E /* MovieModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A165A5881C2ACA1400839E9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A165A5891C2ACA2000839E9E /* Constants.swift */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A165A5851C2AC8EF00839E9E /* MovieModel.swift in Sources */,
 				A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */,
 				A14A14521BCE7CFF00D6DB06 /* SearchTableViewController.swift in Sources */,
 				A14A14411BCE69A900D6DB06 /* Algolia.xcdatamodeld in Sources */,
 				A14A14501BCE7AD300D6DB06 /* README.md in Sources */,
 				A14A143B1BCE69A900D6DB06 /* ViewController.swift in Sources */,
 				A14A14391BCE69A900D6DB06 /* AppDelegate.swift in Sources */,
+				A165A58A1C2ACA2000839E9E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,14 +7,32 @@
 //
 
 import UIKit
+import AlgoliaSearch
+import SwiftyJSON
 
 class SearchTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate {
 
     var searchController: UISearchController?
     
+    //Algolia Client
+    var movieIndex: Index!
+    let myQuery = Query()
+    
+    //Store Algolia Results here
+    var movies = [MovieRecord]()
+    
+    //Algolia Search Results Variables
+    var searchId = 0
+    var displayedSearchId = -1
+    var loadedPage: UInt = 0
+    var nbPages: UInt = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     createSearchController()
+        
+        setupAlgoliaClient()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -95,7 +113,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
     */
 
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        print("updating Search Results")
+        
     }
     func createSearchController() {
         //Search Controller
@@ -103,6 +121,17 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         searchController?.searchResultsUpdater = self
         searchController?.dimsBackgroundDuringPresentation = false
         searchController?.searchBar.delegate = self
+        
+        
+    }
+    
+    func setupAlgoliaClient() {
+        let apiClient = Client(appID: Constants.ALGOLIA_APPID, apiKey: Constants.ALGOLIA_APIKEY)
+        movieIndex = apiClient.getIndex(Constants.ALGOLIA_INDEX)
+        
+        myQuery.hitsPerPage = 15
+        myQuery.attributesToRetrieve = ["title", "image", "rating", "year"]
+        myQuery.attributesToHighlight = ["title"]
         
         
     }
