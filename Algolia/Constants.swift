@@ -11,5 +11,5 @@ import Foundation
 struct Constants {
     static let ALGOLIA_APPID = ""
     static let ALGOLIA_APIKEY = ""
-    static let ALGOLIA_INDEX = ""
+    static let ALGOLIA_INDEX = "tutorial"
 }

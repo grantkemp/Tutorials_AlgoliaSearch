@@ -7,6 +7,8 @@ I am currently looking at Search providers to integrate into apps, so this is th
 for others who are interested in kicking the tyres on it, quite quickly. 
 
 ###Notes and Feedback on the Tutorial
+
+- the initial import tutorial to create th index doesnt seem to work. it links to a page where whn you run through the tutorial it creates an index called getstarted_actors but the tutorial refers to movies. 
 - Recommend that they add the link to Github for the resulting code at top of Demo
 - Tutorial needs to be updated to include the Search Bar/ Search Display controller in latest Xcode eg : https://github.com/algolia/algolia-swift-demo
 - Pod for algolia search client in the tutorial seems to be erroring - recommend update to the latest: pod 'AlgoliaSearch-Client-Swift', '~> 2.0' in the tutorial which builds ok. 

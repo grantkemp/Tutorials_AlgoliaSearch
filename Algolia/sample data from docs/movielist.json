@@ -1,0 +1,29 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "image": "https://image.tmdb.org/t/p/w154/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg",
+    "color": "#8C634B",
+    "score": 9.97764206054169,
+    "rating": 5,
+    "genre": [
+      "Drama",
+      "Crime"
+    ],
+    "objectID": "439817390"
+  },
+  {
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "image": "https://image.tmdb.org/t/p/w154/9gm3lL8JMTTmc3W4BmNMCuRLdL8.jpg",
+    "color": "#3D404C",
+    "score": 9.965674684060334,
+    "rating": 5,
+    "genre": [
+      "Science Fiction",
+      "Fantasy",
+      "Adventure"
+    ],
+    "objectID": "439486910"
+  }
+]
