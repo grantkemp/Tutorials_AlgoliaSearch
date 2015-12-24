@@ -14,4 +14,5 @@ for others who are interested in kicking the tyres on it, quite quickly.
 
 ###UI within Algolia Platform
 - If a user has already created an application -there is no easy way to create a new application to do the tutorial or even delete and reset their account. If they try- then they are threatened with having their credit card immediately charged. ( not very friendly and usable for developers learning to use the platform)
+- After a bit of help from Support- it turns out that you need to add a a new index to the existing application - instead of adding a new application llike other developer services do like Parse.com and Flickr.  It might be a good idea to feed that back to users on a relevant page like the "created new application page"
 - They also can't easily find a link to contact support. Its very well hidden! - Should be much easier to see support to encourage people engage and evangelise. 
