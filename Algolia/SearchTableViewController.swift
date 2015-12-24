@@ -65,6 +65,10 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         cell.textLabel?.highlightedText = movie.title
         cell.detailTextLabel?.text = "\(movie.year)"
 
+        if (indexPath.row + 5) >= movies.count {
+            loadMore()
+        }
+
         return cell
     }
     
@@ -150,6 +154,42 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         ++self.searchId
     }
     
+    
+    //MARK: Lazy Loading
+    
+    func loadMore() {
+        if loadedPage + 1 >= nbPages {
+            return //  all Pages are loaded already
+        }
+        
+        
+        let nextQuery = Query(copy: myQuery)
+        nextQuery.page = loadedPage + 1
+        
+        movieIndex.search(nextQuery) { (content, error) -> Void in
+            if nextQuery.query != self.myQuery.query || error != nil {
+                return // Query has changed
+            }
+            
+            self.loadedPage = nextQuery.page
+            
+            let json = JSON(content!)
+            let hits: [JSON] = json["hits"].arrayValue
+            
+            var tmp = [MovieRecord]()
+            for record in hits {
+                tmp.append(MovieRecord(json: record))
+            }
+            
+            // Show new Recorded Page
+            self.movies.appendContentsOf(tmp)
+            self.tableView.reloadData()
+        }
+    }
+
+    
+    
+    //MARK: Setup Methods
     
     func createSearchController() {
         //Search Controller
