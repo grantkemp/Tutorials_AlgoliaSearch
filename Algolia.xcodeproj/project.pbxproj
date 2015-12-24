@@ -19,7 +19,6 @@
 		A14A14521BCE7CFF00D6DB06 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */; };
 		A165A5851C2AC8EF00839E9E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165A5841C2AC8EF00839E9E /* MovieModel.swift */; };
 		A165A58A1C2ACA2000839E9E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165A5891C2ACA2000839E9E /* Constants.swift */; };
-		A165A58C1C2C835C00839E9E /* Constants_SETUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165A58B1C2C835C00839E9E /* Constants_SETUP.swift */; };
 		A165A58E1C2C840400839E9E /* movielist.json in Resources */ = {isa = PBXBuildFile; fileRef = A165A58D1C2C840400839E9E /* movielist.json */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		A14A14511BCE7CFF00D6DB06 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		A165A5841C2AC8EF00839E9E /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		A165A5891C2ACA2000839E9E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A165A58B1C2C835C00839E9E /* Constants_SETUP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants_SETUP.swift; sourceTree = "<group>"; };
 		A165A58D1C2C840400839E9E /* movielist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = movielist.json; path = "sample data from docs/movielist.json"; sourceTree = "<group>"; };
 		C272300D8532F9F05CCE0B5B /* Pods-Algolia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia/Pods-Algolia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				A165A58D1C2C840400839E9E /* movielist.json */,
-				A165A58B1C2C835C00839E9E /* Constants_SETUP.swift */,
 				A165A5891C2ACA2000839E9E /* Constants.swift */,
 			);
 			name = "Support Files";
@@ -260,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A165A58C1C2C835C00839E9E /* Constants_SETUP.swift in Sources */,
 				A165A5851C2AC8EF00839E9E /* MovieModel.swift in Sources */,
 				A14A144E1BCE792E00D6DB06 /* UILabel+Highlighting.swift in Sources */,
 				A14A14521BCE7CFF00D6DB06 /* SearchTableViewController.swift in Sources */,

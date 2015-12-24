@@ -48,24 +48,26 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return movies.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+       let movie = movies[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("movieCell", forIndexPath: indexPath)
+        cell.textLabel?.highlightedTextColor = UIColor.purpleColor()
+        cell.textLabel?.highlightedText = movie.title
+        cell.detailTextLabel?.text = "\(movie.year)"
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -147,7 +149,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         }
         ++self.searchId
     }
-     
+    
     
     func createSearchController() {
         //Search Controller
