@@ -184,6 +184,11 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         searchController?.dimsBackgroundDuringPresentation = false
         searchController?.searchBar.delegate = self
         
+        // Add the search bar
+        tableView.tableHeaderView = self.searchController!.searchBar
+        definesPresentationContext = true
+        searchController!.searchBar.sizeToFit()
+        
         
     }
     
