@@ -147,35 +147,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         }
         ++self.searchId
     }
-//                    query.query = searchController.searchBar.text
-//            let curSearchId = searchId
-//            
-//            movieIndex.search(query, block: { (data, error) -> Void in
-//                if (curSearchId <= self.displayedSearchId) || (error != nil) {
-//                    return // Newest query already displayed or error
-//                }
-//                
-//                self.displayedSearchId = curSearchId
-//                self.loadedPage = 0 // Reset loaded page
-//                
-//                // Decode JSON
-//                let json = JSON(data!)
-//                let hits: [JSON] = json["hits"].arrayValue
-//                self.nbPages = UInt(json["nbPages"].intValue)
-//                
-//                var tmp = [MovieRecord]()
-//                for record in hits {
-//                    tmp.append(MovieRecord(json: record))
-//                }
-//                
-//                // Reload view with the new data
-//                self.movies = tmp
-//                self.tableView.reloadData()
-//            })
-//            
-//            ++self.searchId
      
-        
     
     func createSearchController() {
         //Search Controller
