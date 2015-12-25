@@ -7,9 +7,13 @@
 2. In Movielist.json: upload the attached movielist.json file to your Algolia account and make sure you have created a new index calledd "tutorial"
 3. Delete Constants_SETUP.swift
 
+3b. (Optionally if you want to use the data set that comes with the Algolia tutorial - then switch the feature branch: feature/Option2_UpdateToActorsDataSet)
+3c Go through their tutorial to get started which creates a gettingstarted_actors index ( no idea about link)
+3d. Update the index in the AlgoliaIndexConstants.swift to the correct index where you have stored that data if its changed since this project has been created.  You can find it by going to "Indices"in the Dashboard backend for Algolia.
+
 ###Tech Investigation into algolia
-I am currently looking at Search providers to integrate into apps, so this is the tutorial from their sit
-for others who are interested in kicking the tyres on it, quite quickly. 
+I am currently looking at Search providers to integrate into apps, so this is the tutorial from their site
+for others who are interested in kicking the tyres on it, quite quickly. m
 
 ###Notes and Feedback on the Tutorial
 
@@ -25,3 +29,4 @@ for others who are interested in kicking the tyres on it, quite quickly.
 - If a user has already created an application -there is no easy way to create a new application to do the tutorial or even delete and reset their account. If they try- then they are threatened with having their credit card immediately charged. ( not very friendly and usable for developers learning to use the platform)
 - After a bit of help from Support- it turns out that you need to add a a new index to the existing application - instead of adding a new application llike other developer services do like Parse.com and Flickr.  It might be a good idea to feed that back to users on a relevant page like the "created new application page"
 - They also can't easily find a link to contact support. Its very well hidden! - Should be much easier to see support to encourage people engage and evangelise. 
+- If user puts an incorrect Index in - then it should give a useful feedback message. ( nothing came up when I deliberately put in the wrong one)
