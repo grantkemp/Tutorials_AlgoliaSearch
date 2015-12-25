@@ -15,11 +15,11 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
     var searchController: UISearchController?
     
     //Algolia Client
-    var movieIndex: Index!
+    var actorIndex: Index!
     let myQuery = Query()
     
     //Store Algolia Results here
-    var movies = [MovieRecord]()
+    var actors = [ActorRecord]()
     
     //Algolia Search Results Variables
     var searchId = 0
@@ -54,18 +54,18 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return movies.count
+        return actors.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-       let movie = movies[indexPath.row]
+       let actor = actors[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier("movieCell", forIndexPath: indexPath)
         cell.textLabel?.highlightedTextColor = UIColor.purpleColor()
-        cell.textLabel?.highlightedText = movie.title
-        cell.detailTextLabel?.text = "\(movie.year)"
+        cell.textLabel?.highlightedText = actor.name!
+        cell.detailTextLabel?.text = "\(actor.alternativeName!)"
 
-        if (indexPath.row + 5) >= movies.count {
+        if (indexPath.row + 5) >= actors.count {
             loadMore()
         }
 
@@ -125,7 +125,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         let currentSearchId = searchId
         
         
-        movieIndex.search(myQuery) { (content, error) -> Void in
+        actorIndex.search(myQuery) { (content, error) -> Void in
             
             if currentSearchId <= self.displayedSearchId || error != nil {
                 return //latest query is already displayd or there is an error
@@ -140,13 +140,13 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
             let hits: [JSON] = json["hits"].arrayValue
             self.nbPages = UInt(json["nbPages"].intValue)
             
-            var tmp = [MovieRecord]()
+            var tmp = [ActorRecord]()
             for record in hits {
-                tmp.append(MovieRecord(json: record))
+                tmp.append(ActorRecord(jsonresponse: record))
             }
             
             //Reload view
-            self.movies  = tmp
+            self.actors  = tmp
             self.tableView.reloadData()
 
             
@@ -166,7 +166,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         let nextQuery = Query(copy: myQuery)
         nextQuery.page = loadedPage + 1
         
-        movieIndex.search(nextQuery) { (content, error) -> Void in
+        actorIndex.search(nextQuery) { (content, error) -> Void in
             if nextQuery.query != self.myQuery.query || error != nil {
                 return // Query has changed
             }
@@ -176,13 +176,13 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
             let json = JSON(content!)
             let hits: [JSON] = json["hits"].arrayValue
             
-            var tmp = [MovieRecord]()
+            var tmp = [ActorRecord]()
             for record in hits {
-                tmp.append(MovieRecord(json: record))
+                tmp.append(ActorRecord(jsonresponse: record))
             }
             
             // Show new Recorded Page
-            self.movies.appendContentsOf(tmp)
+            self.actors.appendContentsOf(tmp)
             self.tableView.reloadData()
         }
     }
@@ -208,11 +208,11 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
     
     func setupAlgoliaClient() {
         let apiClient = Client(appID: Constants.ALGOLIA_APPID, apiKey: Constants.ALGOLIA_APIKEY)
-        movieIndex = apiClient.getIndex(Constants.ALGOLIA_INDEX)
+        actorIndex = apiClient.getIndex(Constants.AlgoliaIndexConstants.INDEX)
         
         myQuery.hitsPerPage = 15
-        myQuery.attributesToRetrieve = ["title", "image", "rating", "year"]
-        myQuery.attributesToHighlight = ["title"]
+        myQuery.attributesToRetrieve = [Constants.AlgoliaIndexConstants.name, Constants.AlgoliaIndexConstants.rating,Constants.AlgoliaIndexConstants.imagePath, Constants.AlgoliaIndexConstants.alternative_name]
+        myQuery.attributesToHighlight = [Constants.AlgoliaIndexConstants.name,]
         
         
     }
